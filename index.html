@@ -1,0 +1,1131 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<script>/* garante a barra no fim do endereço, para as imagens e vídeos carregarem */(function(){var p=location.pathname;if(location.protocol.indexOf("http")===0&&!/\/$/.test(p)&&!/\.[a-z0-9]+$/i.test(p)){location.replace(p+"/"+location.search+location.hash);}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Franquia Cymaco</title>
+<meta name="description" content="Franquia de retrofit da Cymaco Engenharia, desde 1982. Potencial de faturar até R$ 6 milhões por ano, investimento a partir de R$ 250 mil. Veja se sua cidade está disponível.">
+<meta name="theme-color" content="#121417">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: faixas limpas de ponta a ponta (grafite profundo, vinho, branco e cinza frio), grid de 12 colunas até 1280px.
+   Visual único da marca, sem texturas; as imagens são desenhos feitos em código (prédio, skyline, planta). */
+:root {
+  --red: #D2342E;
+  --red-bright: #ED332F;
+  --wine: #7B0E14;
+  --ink: #121417;
+  --ink-2: #1B1E22;
+  --ink-3: #262A30;
+  --body: #4B5058;
+  --mute: #8A9099;
+  --line: #E4E6EA;
+  --paper: #FFFFFF;
+  --cool: #F3F4F6;
+  --font: "Poppins", "Montserrat", "Segoe UI", Arial, sans-serif;
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --wrap: 1280px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --header: 72px;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { overflow-x: clip; scroll-behavior: smooth; scroll-padding-top: calc(var(--header) + 12px); -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: clip; touch-action: manipulation; -webkit-tap-highlight-color: rgba(210, 52, 46, 0.15); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--paper); z-index: 60; }
+img { max-width: 100%; display: block; height: auto; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+.wrap { width: 100%; max-width: calc(var(--wrap) + 96px); margin: 0 auto; padding-left: max(var(--gutter), 24px); padding-right: max(var(--gutter-r), 24px); }
+@media (max-width: 600px) { .wrap { padding-left: var(--gutter); padding-right: var(--gutter-r); } }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 6px; }
+.skip:focus { top: 12px; }
+:focus-visible { outline: 3px solid var(--red-bright); outline-offset: 3px; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* tipografia */
+.display { font-weight: 800; text-transform: uppercase; letter-spacing: -0.035em; line-height: 0.96; font-size: clamp(40px, 5.8vw, 88px); }
+.h2 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.03; font-size: clamp(30px, 4vw, 58px); }
+.h2.caps { text-transform: uppercase; }
+.lead { font-size: clamp(17px, 1.5vw, 20px); line-height: 1.55; max-width: 58ch; }
+.num { font-variant-numeric: tabular-nums; }
+.accent { color: var(--red-bright); }
+
+/* botões */
+.btn { --mx: 0px; --my: 0px; position: relative; overflow: hidden; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 16px 28px; border: 0; border-radius: 6px; background: var(--red); color: #fff; font: 600 15px/1.2 var(--font); letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; cursor: pointer;
+  transform: translate(var(--mx), var(--my)); transition: transform 0.25s var(--ease), color 0.25s var(--ease); }
+.btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--wine); transform: scaleX(0); transform-origin: var(--ox, left); transition: transform 0.4s var(--ease); }
+.btn:hover::before { transform: scaleX(1); }
+.btn:active { transform: translate(var(--mx), var(--my)) scale(0.98); }
+.btn svg { width: 18px; height: 18px; flex: none; transition: transform 0.25s var(--ease); }
+.btn:hover svg { transform: translateX(4px); }
+.btn.light { background: #fff; color: var(--wine); }
+.btn.light::before { background: var(--cool); }
+.btn.sm { min-height: 44px; padding: 12px 18px; font-size: 13px; }
+.seal { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 12px; border-radius: 999px; border: 1px solid rgba(237, 51, 47, 0.5); color: #fff; font-size: 12px; font-weight: 600; letter-spacing: 0.26em; text-transform: uppercase; }
+.seal i { width: 8px; height: 8px; border-radius: 50%; background: var(--red-bright); box-shadow: 0 0 0 0 rgba(237, 51, 47, 0.6); }
+.js .seal i { animation: ping 2.2s var(--ease) infinite; }
+@keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(237, 51, 47, 0.55); } 100% { box-shadow: 0 0 0 10px rgba(237, 51, 47, 0); } }
+
+/* linhas da logo (motivo gráfico) */
+.sweep { position: absolute; pointer-events: none; z-index: 0; }
+.sweep path { fill: none; stroke: currentColor; stroke-width: 14; }
+
+/* header */
+.site-header { position: fixed; top: env(safe-area-inset-top, 0px); left: 0; right: 0; z-index: 50; background: rgba(255, 255, 255, 0.94); backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
+.site-header .wrap { height: var(--header); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand img { width: 196px; height: auto; }
+.nav { display: flex; gap: 28px; }
+.nav a { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; position: relative; padding: 6px 0; }
+.nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--red); transform: scaleX(0); transform-origin: left; transition: transform 0.3s var(--ease); }
+.nav a:hover::after { transform: scaleX(1); }
+@media (max-width: 1080px) { .nav { display: none; } }
+@media (max-width: 480px) { .site-header .wrap { gap: 12px; } .brand img { width: 128px; } .site-header .btn { padding: 10px 12px; font-size: 11px; letter-spacing: 0.02em; } }
+
+/* seções base */
+section { position: relative; }
+.band { padding-block: clamp(80px, 10vw, 150px); }
+.band.ink { background: var(--ink); color: #fff; }
+.band.wine { background: var(--wine); color: #fff; }
+.band.cool { background: var(--cool); }
+.section-head { display: flex; flex-direction: column; gap: 18px; margin-bottom: clamp(40px, 5vw, 72px); max-width: 880px; position: relative; z-index: 1; }
+.title-bar { border-left: 6px solid var(--red-bright); padding-left: 20px; }
+
+/* 1. hero */
+.hero { background: var(--ink); color: #fff; padding-top: calc(var(--header) + env(safe-area-inset-top, 0px)); overflow: hidden; }
+.hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: clamp(24px, 4vw, 64px); align-items: center; min-height: min(calc(100dvh - var(--header)), 880px); padding-block: clamp(40px, 6vw, 80px); }
+.hero-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 26px; min-width: 0; }
+.hero .display { max-width: 11ch; }
+.hero .lead { color: rgba(255, 255, 255, 0.82); }
+.hero .lead strong { color: #fff; }
+.proof { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; color: rgba(255, 255, 255, 0.66); }
+.proof span { display: inline-flex; align-items: center; }
+.proof span + span::before { content: ""; width: 4px; height: 4px; border-radius: 50%; background: var(--red-bright); margin-right: 18px; }
+.hero .sweep { color: rgba(255, 255, 255, 0.045); width: min(900px, 80vw); left: -14vw; bottom: -30%; }
+.tower { position: relative; min-width: 0; width: 100%; max-width: 470px; margin-inline: auto; aspect-ratio: 410 / 600; }
+.tower svg { width: 100%; height: 100%; overflow: visible; }
+.tower .floor { transform-box: fill-box; }
+.js .tower .floor { opacity: 0; transform: translateY(-26px); }
+.js .tower.built .floor { opacity: 1; transform: none; transition: opacity 0.6s var(--ease), transform 0.7s var(--ease); transition-delay: calc(var(--f) * 70ms); }
+.js .tower .lit { opacity: 0; }
+.js .tower.built .lit { opacity: 1; transition: opacity 0.5s ease; transition-delay: calc(1100ms + var(--w) * 40ms); }
+.js .tower .ring { stroke-dasharray: 1500; stroke-dashoffset: 1500; }
+.js .tower.built .ring { stroke-dashoffset: 0; transition: stroke-dashoffset 1.8s var(--ease); transition-delay: calc(900ms + var(--k) * 140ms); }
+.kpi { position: absolute; z-index: 2; background: rgba(27, 30, 34, 0.86); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 14px 18px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); min-width: 0; }
+.kpi b { display: block; font-size: clamp(20px, 2vw, 28px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+.kpi span { font-size: 12px; color: rgba(255, 255, 255, 0.66); letter-spacing: 0.04em; }
+.kpi b.accent { color: var(--red-bright); }
+.kpi.k1 { left: 0; top: 14%; }
+.kpi.k2 { right: 0; top: 42%; }
+.kpi.k3 { left: 6%; bottom: 8%; }
+.js .kpi { opacity: 0; transform: translateY(14px); }
+.js .tower.built ~ .kpi, .js .hero-visual.built .kpi { opacity: 1; transform: none; transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); }
+.js .hero-visual.built .kpi.k1 { transition-delay: 1.3s; } .js .hero-visual.built .kpi.k2 { transition-delay: 1.5s; } .js .hero-visual.built .kpi.k3 { transition-delay: 1.7s; }
+.js .hero-visual.built .kpi .float { animation: float 6s ease-in-out infinite; }
+.hero-visual { position: relative; min-width: 0; }
+@keyframes float { 50% { transform: translateY(-6px); } }
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; min-height: 0; padding-block: 28px 64px; }
+  .hero-visual { order: -1; max-width: 420px; width: 100%; margin: 0 auto; }
+  .tower { max-width: 290px; }
+  .kpi { padding: 10px 12px; } .kpi span { font-size: 11px; }
+}
+
+/* marquee */
+.marquee { background: var(--red); color: #fff; overflow: hidden; padding: 18px 0; }
+.marquee-track { display: flex; width: max-content; }
+.marquee-track span { font-size: clamp(15px, 1.5vw, 20px); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; padding-right: 36px; display: inline-flex; align-items: center; gap: 36px; }
+.marquee-track span::after { content: ""; width: 8px; height: 8px; background: #fff; transform: rotate(45deg); }
+.js .marquee-track { animation: marquee 34s linear infinite; }
+.marquee.ghost { background: var(--paper); color: var(--ink); border-block: 1px solid var(--line); }
+.marquee.ghost .marquee-track span { font-weight: 600; letter-spacing: 0.02em; text-transform: none; color: var(--body); }
+.marquee.ghost .marquee-track span::after { background: var(--red); }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* 2. números */
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; position: relative; z-index: 1; }
+.stat { display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 2px solid rgba(255, 255, 255, 0.22); min-width: 0; position: relative; }
+.stat::before { content: ""; position: absolute; top: -2px; left: 0; width: 100%; height: 2px; background: #fff; transform-origin: left; transform: scaleX(0); transition: transform 1.4s var(--ease); transition-delay: calc(var(--k, 0) * 120ms); }
+.stat.in::before { transform: scaleX(1); }
+.stat b { font-size: clamp(46px, 6.2vw, 96px); font-weight: 800; letter-spacing: -0.045em; line-height: 0.95; white-space: nowrap; }
+.stat b small { font-size: 0.4em; letter-spacing: -0.01em; font-weight: 700; margin-left: 4px; }
+.stat b .pre { font-size: 0.4em; vertical-align: 0.95em; margin-right: 4px; font-weight: 700; }
+.stat > span { font-size: 16px; color: rgba(255, 255, 255, 0.82); max-width: 22ch; }
+.wine .sweep { color: rgba(255, 255, 255, 0.06); width: min(760px, 70vw); right: -10vw; top: -20%; }
+@media (max-width: 900px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 20px; } }
+
+/* 3. oportunidade (skyline) */
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.split .copy { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+.split .copy p { max-width: 56ch; }
+.skyline { position: relative; min-width: 0; background: var(--ink); border-radius: 16px; padding: 28px 24px 0; overflow: hidden; }
+.skyline svg { width: 100%; height: auto; display: block; }
+.skyline .bld { fill: var(--ink-3); transition: fill 0.6s var(--ease); transition-delay: calc(var(--d) * 90ms); }
+.skyline .win { fill: rgba(255, 255, 255, 0.12); }
+.skyline.in .bld.hot { fill: var(--red); }
+.skyline .legend { position: relative; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 16px 0 20px; color: rgba(255, 255, 255, 0.7); font-size: 13px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.skyline .legend b { color: #fff; }
+.skyline .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: var(--red); margin-right: 8px; vertical-align: -1px; }
+.js .skyline .bld { transform: scaleY(0.001); transform-box: fill-box; transform-origin: bottom; }
+.js .skyline.in .bld { transform: none; transition: transform 0.9s var(--ease), fill 0.6s var(--ease); transition-delay: calc(var(--d) * 60ms), calc(900ms + var(--d) * 90ms); }
+@media (max-width: 900px) { .split { grid-template-columns: 1fr; } }
+
+/* 4. olho de dono */
+.owner { overflow: hidden; }
+.owner .sweep { color: rgba(210, 52, 46, 0.06); width: min(900px, 90vw); right: -24vw; top: -10%; }
+.owner-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.portrait { position: relative; margin: 0; }
+.portrait .frame { overflow: hidden; border-radius: 16px; aspect-ratio: 8 / 5; background: var(--ink); }
+.portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+.portrait .sig { position: absolute; left: -1px; bottom: -28px; background: var(--red); color: #fff; padding: 16px 22px; border-radius: 0 6px 6px 0; max-width: 85%; }
+.portrait .sig strong { display: block; font-size: 20px; line-height: 1.2; }
+.portrait .sig span { font-size: 13px; opacity: 0.9; }
+.owner .copy { display: flex; flex-direction: column; gap: 26px; min-width: 0; }
+.owner .copy p { font-size: clamp(17px, 1.4vw, 19px); max-width: 58ch; }
+.slogan { font-size: 13px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: var(--red); padding-top: 22px; border-top: 1px solid var(--line); }
+@media (max-width: 900px) { .owner-grid { grid-template-columns: 1fr; } .portrait { max-width: 480px; margin-bottom: 28px; } }
+
+/* 5. comparativo */
+.compare-head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 48px; align-items: end; margin-bottom: 64px; }
+#h-compare { line-height: 1.22; letter-spacing: -0.02em; }
+#h-compare .mark { padding: 0.02em 0.16em; }
+.compare-head p { color: rgba(255, 255, 255, 0.78); font-size: 18px; }
+.mark { background: #fff; color: var(--wine); padding: 0 0.14em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.ctable { width: 100%; border-collapse: separate; border-spacing: 0; }
+.ctable th, .ctable td { text-align: left; padding: 22px 20px; vertical-align: top; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+.ctable thead th { font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255, 255, 255, 0.55); }
+.ctable thead th:last-child { color: #fff; background: var(--red); border-radius: 12px 12px 0 0; border-bottom: 0; }
+.ctable tbody th { font-weight: 700; font-size: 17px; width: 20%; }
+.ctable td { font-size: 16px; }
+.ctable td.no { color: rgba(255, 255, 255, 0.5); }
+.ctable td.yes { color: #fff; font-weight: 500; background: var(--ink-3); }
+.ctable tbody tr:last-child td.yes { border-radius: 0 0 12px 12px; }
+.ico { display: inline-flex; vertical-align: -3px; margin-right: 10px; width: 20px; height: 20px; }
+.ico svg { width: 20px; height: 20px; }
+.no .ico { color: rgba(255, 255, 255, 0.35); }
+.yes .ico { color: var(--red-bright); }
+.compare-cta { margin-top: 48px; }
+@media (max-width: 760px) {
+  .compare-head { grid-template-columns: 1fr; }
+  .ctable thead { display: none; }
+  .ctable, .ctable tbody, .ctable tr, .ctable th, .ctable td { display: block; width: 100%; }
+  .ctable tr { padding: 18px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.14); }
+  .ctable th, .ctable td { border: 0; padding: 4px 0; }
+  .ctable td.yes { background: none; }
+}
+
+/* 5b. vídeos do Luciano */
+.reels-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: end; margin-bottom: 48px; }
+.reels-head .lead { color: var(--body); }
+.reels { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 60px) / 4); gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding-bottom: 12px; overscroll-behavior-x: contain; scrollbar-width: thin; }
+.reel, .reel-cta { scroll-snap-align: start; }
+.reels-side { display: flex; flex-direction: column; gap: 20px; }
+.reels-nav { display: flex; gap: 10px; }
+.reels-arrow { width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--line); background: #fff; color: var(--ink); display: grid; place-items: center; cursor: pointer; transition: background-color 0.2s, color 0.2s, opacity 0.2s; }
+.reels-arrow:hover:not(:disabled) { background: var(--ink); color: #fff; }
+.reels-arrow:disabled { opacity: 0.35; cursor: default; }
+.reels-arrow svg { width: 20px; height: 20px; }
+.reel-cta { margin: 0; align-self: start; aspect-ratio: 9 / 16; max-width: 100%; border-radius: 16px; background: var(--ink); color: #fff; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; position: relative; overflow: hidden; }
+.reel-cta .sweep { color: rgba(237, 51, 47, 0.18); width: 150%; right: -60%; bottom: -30%; }
+.reel-cta p { position: relative; font-size: clamp(22px, 2vw, 28px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.reel-cta span { position: relative; color: rgba(255, 255, 255, 0.72); font-size: 15px; }
+.reel-cta .btn { position: relative; width: 100%; padding-inline: 16px; }
+.reel { margin: 0; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.reel-frame { position: relative; aspect-ratio: 9 / 16; max-width: 100%; border-radius: 16px; overflow: hidden; background: var(--ink); box-shadow: 0 24px 48px -28px rgba(18, 20, 23, 0.55); cursor: pointer; }
+.reel-frame video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.reel-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; pointer-events: none; transition: opacity 0.3s ease; }
+.reel-frame.live .reel-poster { opacity: 0; }
+.reel-sound { z-index: 2; }
+.reel-frame::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 2px transparent; transition: box-shadow 0.3s var(--ease); pointer-events: none; }
+.reel.playing .reel-frame::after { box-shadow: inset 0 0 0 3px var(--red-bright); }
+.reel-sound { position: absolute; right: 12px; bottom: 12px; width: 44px; height: 44px; border-radius: 50%; border: 0; display: grid; place-items: center; background: rgba(18, 20, 23, 0.72); color: #fff; cursor: pointer; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); transition: background-color 0.2s; }
+.reel-sound:hover { background: var(--red); }
+.reel-sound svg { width: 20px; height: 20px; }
+.reel-sound .on { display: none; }
+.reel-sound[aria-pressed="true"] { background: var(--red); }
+.reel-sound[aria-pressed="true"] .on { display: inline; }
+.reel-sound[aria-pressed="true"] .off { display: none; }
+.reel figcaption { font-size: 17px; font-weight: 700; line-height: 1.3; }
+@media (min-width: 901px) and (max-width: 1180px) { .reels { grid-auto-columns: calc((100% - 40px) / 3); } }
+@media (max-width: 900px) {
+  .reels-head { grid-template-columns: 1fr; gap: 16px; margin-bottom: 32px; }
+  .reels { grid-auto-columns: 72%; }
+  .reels-nav { display: none; }
+}
+
+/* 6. o que vem */
+.bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; }
+.tile { position: relative; border-radius: 16px; background: var(--cool); padding: 28px; display: flex; flex-direction: column; gap: 10px; min-width: 0; overflow: hidden; transition: transform 0.35s var(--ease); }
+.tile h3 { font-size: 20px; font-weight: 700; line-height: 1.25; }
+.tile p { font-size: 16px; color: var(--body); }
+.tile .ti { width: 40px; height: 40px; color: var(--red); margin-bottom: 8px; }
+.tile.dark { background: var(--ink); color: #fff; }
+.tile.dark p { color: rgba(255, 255, 255, 0.78); }
+.tile.red { background: var(--red); color: #fff; }
+.tile.red p { color: rgba(255, 255, 255, 0.9); }
+.tile.red .ti { color: #fff; }
+.blueprint { flex: 1; min-height: 200px; display: flex; align-items: center; justify-content: center; margin: -8px -8px 12px; }
+.blueprint svg { width: 100%; max-width: 520px; height: auto; }
+.blueprint path, .blueprint rect, .blueprint line { fill: none; stroke: rgba(255, 255, 255, 0.55); stroke-width: 1.4; }
+.blueprint .acc { stroke: var(--red-bright); stroke-width: 2; }
+.js .blueprint .dr { stroke-dasharray: 900; stroke-dashoffset: 900; }
+.js .tile.in .blueprint .dr { stroke-dashoffset: 0; transition: stroke-dashoffset 2.2s var(--ease); transition-delay: calc(var(--k, 0) * 100ms); }
+.tile .big120 { color: #fff; font-size: clamp(64px, 8vw, 120px); font-weight: 800; letter-spacing: -0.05em; line-height: 0.9; margin: 8px 0 6px; }
+.t1 { grid-column: span 7; grid-row: span 2; }
+.t2 { grid-column: span 5; }
+.t3 { grid-column: span 5; }
+.t4 { grid-column: span 4; }
+.t5 { grid-column: span 5; }
+.t6 { grid-column: span 3; }
+@media (max-width: 900px) { .bento { grid-template-columns: 1fr; } .bento > * { grid-column: auto !important; grid-row: auto !important; } }
+
+/* 7. investimento */
+.invest { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
+.invest > * { min-width: 0; }
+.ledger { background: var(--ink); color: #fff; border-radius: 16px; padding: clamp(28px, 4vw, 48px); }
+.ledger-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 18px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+.ledger-row:first-child { padding-top: 0; }
+.ledger-row span { font-size: 15px; color: rgba(255, 255, 255, 0.7); }
+.ledger-row b { font-size: clamp(22px, 2.4vw, 32px); font-weight: 800; letter-spacing: -0.02em; text-align: right; white-space: nowrap; }
+.ledger-row.hl b { color: var(--red-bright); }
+.ledger-note { margin-top: 18px; font-size: 13px; color: rgba(255, 255, 255, 0.58); }
+.fit { display: flex; flex-direction: column; gap: 28px; }
+.fit h3 { font-size: 22px; font-weight: 700; }
+.fit ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px; }
+.fit li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; font-size: 17px; }
+.fit li svg { width: 24px; height: 24px; color: var(--red); margin-top: 2px; }
+.position { font-size: 19px; font-weight: 600; line-height: 1.45; padding: 22px 24px; background: #fff; border-radius: 8px; border-left: 6px solid var(--red-bright); }
+@media (max-width: 900px) { .invest { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .ledger-row { flex-direction: column; align-items: flex-start; gap: 2px; } .ledger-row b { text-align: left; white-space: normal; } }
+
+/* 8. como funciona */
+.steps-grid { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+.steps-intro { position: sticky; top: calc(var(--header) + 48px); display: flex; flex-direction: column; gap: 22px; }
+.steps-intro p { color: rgba(255, 255, 255, 0.78); font-size: 18px; }
+.steps { position: relative; padding-left: 28px; }
+.steps ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+.steps .rail { position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: rgba(255, 255, 255, 0.1); border-radius: 2px; }
+.steps .rail i { position: absolute; inset: 0; background: var(--red-bright); transform-origin: top; }
+.step { position: sticky; top: calc(var(--header) + 32px + var(--i) * 18px); background: var(--ink-2); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: clamp(24px, 3vw, 36px); display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 22px; box-shadow: 0 -20px 40px -26px rgba(0, 0, 0, 0.7); }
+.step .n { font-size: clamp(40px, 4vw, 56px); font-weight: 800; line-height: 1; color: var(--red-bright); letter-spacing: -0.04em; }
+.step h3 { font-size: 21px; font-weight: 700; margin-bottom: 6px; }
+.step p { color: rgba(255, 255, 255, 0.76); font-size: 16px; }
+@media (max-width: 900px) { .steps-grid { grid-template-columns: 1fr; } .steps-intro { position: static; } }
+
+/* 9. rede e franqueados */
+.proof-head { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 48px; align-items: end; margin-bottom: 64px; }
+.bigquote { font-size: clamp(30px, 3.8vw, 54px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.08; }
+.bigquote .hl { color: var(--red); white-space: nowrap; }
+.bigquote-src { margin-top: 18px; font-size: 15px; color: var(--body); }
+.timeline { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-bottom: 56px; }
+.timeline::before { content: ""; position: absolute; left: 0; right: 0; top: 9px; height: 2px; background: var(--line); }
+.timeline .bar { position: absolute; left: 0; right: 0; top: 9px; height: 2px; background: var(--red); transform-origin: left; transform: scaleX(1); }
+.js .timeline .bar { transform: scaleX(0); transition: transform 1.8s var(--ease); }
+.js .timeline.in .bar { transform: scaleX(1); }
+.milestone { position: relative; padding-top: 36px; min-width: 0; }
+.milestone::before { content: ""; position: absolute; top: 0; left: 0; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 4px solid var(--red); }
+.milestone b { display: block; font-size: clamp(28px, 3vw, 40px); font-weight: 800; letter-spacing: -0.03em; line-height: 1; margin-bottom: 8px; }
+.milestone span { font-size: 15px; color: var(--body); }
+.cities { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 56px; }
+.cities li { list-style: none; display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px; border-radius: 999px; background: var(--cool); font-size: 15px; font-weight: 500; }
+.cities { padding: 0; margin-top: 0; }
+.pin { position: relative; width: 9px; height: 9px; flex: none; border-radius: 50%; background: var(--red); }
+.js .pin::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--red); animation: pulse 2.4s var(--ease) infinite; animation-delay: calc(var(--d, 0) * 0.3s); }
+@keyframes pulse { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(3.2); opacity: 0; } }
+.quotes { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(300px, 1fr); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; overscroll-behavior-x: contain; }
+.quotes.dragging { cursor: grabbing; user-select: none; scroll-snap-type: none; }
+@media (pointer: fine) { .quotes { cursor: grab; } }
+.quote { scroll-snap-align: start; background: var(--ink); color: #fff; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 240px; margin: 0; }
+.quote p { font-size: 19px; line-height: 1.45; }
+.quote footer { font-size: 14px; color: rgba(255, 255, 255, 0.64); }
+.quote footer b { color: #fff; font-weight: 600; }
+.proof-cta { margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+@media (max-width: 900px) { .proof-head { grid-template-columns: 1fr; } .timeline { grid-template-columns: 1fr 1fr; row-gap: 32px; } .timeline::before, .timeline .bar { display: none; } }
+
+/* 10. FAQ */
+.faq-grid { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+.faq-list { border-top: 2px solid var(--ink); }
+.faq-list details { border-bottom: 1px solid var(--line); }
+.faq-list summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 24px 0; font-size: 19px; font-weight: 700; line-height: 1.35; transition: color 0.2s; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary .plus { position: relative; width: 22px; height: 22px; flex: none; }
+.faq-list summary .plus::before, .faq-list summary .plus::after { content: ""; position: absolute; left: 0; right: 0; top: 10px; height: 2px; background: var(--red); transition: transform 0.3s var(--ease); }
+.faq-list summary .plus::after { transform: rotate(90deg); }
+.faq-list details[open] summary .plus::after { transform: rotate(0deg); }
+.faq-list summary:hover { color: var(--red); }
+.faq-list .answer { padding: 0 0 26px; font-size: 17px; color: var(--body); max-width: 62ch; }
+.js .faq-list details[open] .answer { animation: drop 0.4s var(--ease); }
+@keyframes drop { from { opacity: 0; transform: translateY(-8px); } }
+@media (max-width: 900px) { .faq-grid { grid-template-columns: 1fr; } }
+
+/* 11. formulário */
+.lead-band { overflow: hidden; }
+.lead-band .sweep { color: rgba(255, 255, 255, 0.06); width: min(820px, 90vw); left: -12vw; bottom: -24%; }
+.form-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+.form-copy { display: flex; flex-direction: column; gap: 24px; position: sticky; top: calc(var(--header) + 48px); }
+.form-copy p { color: rgba(255, 255, 255, 0.86); }
+.form-copy ul { list-style: none; padding: 0; margin: 8px 0 0; display: flex; flex-direction: column; gap: 12px; }
+.form-copy li { display: flex; gap: 12px; align-items: center; font-size: 16px; }
+.form-copy li svg { width: 20px; height: 20px; flex: none; }
+.card { background: #fff; color: var(--ink); border-radius: 16px; padding: clamp(24px, 3.4vw, 44px); box-shadow: 0 30px 60px -30px rgba(40, 4, 6, 0.6); }
+.field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+.field label, .field legend { font-size: 14px; font-weight: 600; }
+.field input[type="text"], .field input[type="tel"], .field input[type="email"] { width: 100%; min-height: 52px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; font: 400 16px var(--font); color: var(--ink); background: var(--cool); transition: border-color 0.2s, background-color 0.2s; }
+.field input::placeholder { color: var(--mute); }
+.field input:focus-visible { outline: none; border-color: var(--red); background: #fff; box-shadow: 0 0 0 3px rgba(210, 52, 46, 0.16); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+fieldset.field { border: 0; padding: 0; margin: 0 0 20px; min-width: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.chip { position: relative; }
+.chip input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.chip span { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; font-weight: 500; background: #fff; transition: background-color 0.2s, color 0.2s, border-color 0.2s; }
+.chip input:hover + span { border-color: var(--ink); }
+.chip input:checked + span { background: var(--ink); border-color: var(--ink); color: #fff; }
+.chip input:focus-visible + span { outline: 3px solid var(--red-bright); outline-offset: 2px; }
+.err { font-size: 13px; color: #C62828; }
+.field.invalid input[type] { border-color: #C62828; }
+.form-foot { display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }
+.form-foot .btn { width: 100%; }
+.form-foot p { font-size: 13px; color: var(--body); }
+.form-foot p a { color: var(--red); }
+.success { display: flex; flex-direction: column; gap: 16px; }
+.success h3 { font-size: 28px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.success p { color: var(--body); }
+@media (max-width: 900px) { .form-grid { grid-template-columns: 1fr; } .form-copy { position: static; } }
+@media (max-width: 520px) { .row2 { grid-template-columns: 1fr; } }
+
+/* 12. rodapé */
+.site-footer { position: relative; background: var(--ink); color: #fff; overflow: hidden; padding-top: clamp(80px, 10vw, 140px); padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px)); }
+.site-footer .sweep { color: rgba(255, 255, 255, 0.05); width: min(1000px, 110vw); right: -22vw; top: -10%; }
+.site-footer .wrap { position: relative; z-index: 1; }
+.foot-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 32px; padding-bottom: 72px; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
+.foot-cta .h2 { max-width: 18ch; }
+.foot-info { display: grid; grid-template-columns: minmax(0, 1.2fr) repeat(2, minmax(0, 1fr)); gap: 32px; padding-top: 48px; font-size: 14px; color: rgba(255, 255, 255, 0.7); }
+.foot-info img { width: 220px; margin-bottom: 18px; }
+.foot-info h3 { font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; margin-bottom: 12px; }
+.foot-info a { color: #fff; text-decoration-color: rgba(255, 255, 255, 0.3); text-underline-offset: 3px; }
+.foot-info a:hover { color: var(--red-bright); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.badges span { border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 999px; padding: 6px 12px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #fff; }
+.legal { margin-top: 40px; font-size: 12px; color: rgba(255, 255, 255, 0.48); }
+@media (max-width: 900px) { .foot-info { grid-template-columns: 1fr; } }
+
+/* barra fixa no celular */
+.mobile-cta { display: none; }
+@media (max-width: 760px) {
+  .mobile-cta { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 55; padding: 12px var(--gutter-r) calc(12px + env(safe-area-inset-bottom, 0px)) var(--gutter); background: rgba(18, 20, 23, 0.94); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transition: transform 0.35s var(--ease); }
+  .mobile-cta .btn { width: 100%; }
+  .mobile-cta.hide { transform: translateY(110%); }
+  .site-footer { padding-bottom: calc(110px + env(safe-area-inset-bottom, 0px)); }
+}
+
+/* entradas (só com JS) */
+.js .rv { opacity: 0; transform: translateY(26px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); transition-delay: calc(var(--k, 0) * 80ms); }
+.js .rv.in { opacity: 1; transform: none; }
+.js .mask { overflow: hidden; }
+.js .mask > * { transform: translateY(102%); transition: transform 1s var(--ease); }
+.js .mask.in > * { transform: none; }
+.js .draw path { stroke-dasharray: 1400; stroke-dashoffset: 1400; transition: stroke-dashoffset 1.8s var(--ease); transition-delay: calc(var(--k, 0) * 120ms); }
+.js .draw.in path { stroke-dashoffset: 0; }
+.js .hero .rv { transition-duration: 0.6s; transition-delay: calc(var(--k, 0) * 60ms); }
+@media (prefers-reduced-motion: reduce) {
+  .js .rv, .js .mask > *, .js .tower .floor, .js .tower .lit, .js .kpi, .js .skyline .bld { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .js .draw path, .js .tower .ring, .js .blueprint .dr { stroke-dashoffset: 0 !important; transition: none !important; }
+  .js .marquee-track, .js .pin::after, .js .seal i, .js .kpi .float { animation: none !important; }
+  .js .timeline .bar { transform: none !important; transition: none !important; }
+  .js .skyline .bld.hot { fill: var(--red) !important; }
+  .btn, .btn::before, .tile { transition: none !important; }
+}
+</style>
+</head>
+<body>
+
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Cymaco Engenharia, 40 anos, início"><img src="logo-cymaco-40-vermelho.png" alt="Cymaco Engenharia 40 anos" width="442" height="76"></a>
+    <nav class="nav" aria-label="Seções da página">
+      <a href="#franquia">A franquia</a>
+      <a href="#numeros">Números</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#franqueados">Franqueados</a>
+      <a href="#perguntas">Perguntas</a>
+    </nav>
+    <a class="btn sm magnetic" href="#cadastro">Quero ser franqueado</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- 1. HERO -->
+<section class="hero" id="topo" aria-labelledby="h-hero">
+  <svg class="sweep draw" viewBox="0 0 420 420" aria-hidden="true"><path style="--k:0" d="M20 40 C 220 30 360 140 400 400"/><path style="--k:1" d="M20 100 C 190 96 310 190 340 400"/><path style="--k:2" d="M20 160 C 160 162 260 240 280 400"/><path style="--k:3" d="M20 220 C 130 224 205 290 220 400"/></svg>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="seal rv" style="--k:0"><i aria-hidden="true"></i>Oportunidade de investimento</span>
+      <h1 class="display rv" id="h-hero" style="--k:1">Seja o dono da <span class="accent">Cymaco</span> na sua cidade</h1>
+      <p class="lead rv" style="--k:2">Franquia de retrofit com mais de 40 anos de marca por trás e potencial de faturar <strong>até R$&nbsp;6 milhões por ano</strong>. Investimento a partir de R$&nbsp;250 mil, com retorno estimado de 6 a 12 meses.</p>
+      <a class="btn magnetic rv" style="--k:3" href="#cadastro">Ver se minha cidade está disponível <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p class="proof rv" style="--k:4"><span>Desde 1982</span><span>35 milhões de m² executados</span><span>Associada ABF</span></p>
+    </div>
+    <div class="hero-visual" id="heroVisual">
+      <div class="tower" id="tower" role="img" aria-label="Ilustração de um prédio sendo construído andar por andar, com as linhas da marca Cymaco"></div>
+      <div class="kpi k1"><div class="float"><b class="num">até R$ 6 milhões</b><span>potencial de faturamento por ano</span></div></div>
+      <div class="kpi k2"><div class="float" style="animation-delay:-2s"><b class="num accent">6 a 12 meses</b><span>retorno estimado</span></div></div>
+      <div class="kpi k3"><div class="float" style="animation-delay:-4s"><b class="num">2 meses</b><span>para implantar a operação</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. NÚMEROS -->
+<section class="band wine" id="numeros" aria-labelledby="h-numeros" style="overflow:hidden">
+  <svg class="sweep draw" viewBox="0 0 420 420" aria-hidden="true"><path style="--k:0" d="M20 40 C 220 30 360 140 400 400"/><path style="--k:1" d="M20 100 C 190 96 310 190 340 400"/><path style="--k:2" d="M20 160 C 160 162 260 240 280 400"/><path style="--k:3" d="M20 220 C 130 224 205 290 220 400"/></svg>
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h2 rv" id="h-numeros">Antes de qualquer conversa, os números</h2>
+    </div>
+    <div class="stats">
+      <div class="stat rv" style="--k:0"><b class="num"><span class="pre">+</span><span data-count="40">40</span></b><span>anos de história, desde 1982</span></div>
+      <div class="stat rv" style="--k:1"><b class="num"><span data-count="35">35</span><small>mi m²</small></b><span>executados em obras</span></div>
+      <div class="stat rv" style="--k:2"><b class="num"><span data-count="4">4</span><small>estados</small></b><span>com unidades Cymaco</span></div>
+      <div class="stat rv" style="--k:3"><b class="num"><span class="pre">R$</span><span data-count="6">6</span><small>milhões</small></b><span>de potencial de faturamento por ano</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. A OPORTUNIDADE -->
+<section class="band" aria-labelledby="h-oportunidade">
+  <div class="wrap split">
+    <div class="copy">
+      <h2 class="h2 rv" id="h-oportunidade">Todo prédio envelhece. Alguém vai cuidar dos da sua cidade.</h2>
+      <p class="rv" style="--k:1">Fissura, pastilha soltando, infiltração. Todo condomínio passa por isso, e o síndico precisa resolver. O retrofit recupera e moderniza o prédio sem reconstruir, dá segurança a quem mora e valoriza o imóvel.</p>
+      <p class="rv" style="--k:2">É uma demanda que existe em toda cidade com prédios, num mercado estimado em R$&nbsp;380 bilhões. A Cymaco quer que quem atenda essa demanda na sua região seja você.</p>
+    </div>
+    <div class="skyline rv" id="skyline" style="--k:1" role="img" aria-label="Ilustração de uma cidade em que vários prédios se acendem em vermelho, representando condomínios que precisam de retrofit">
+      <svg id="skylineSvg" viewBox="0 0 560 300" aria-hidden="true"></svg>
+      <div class="legend" aria-hidden="true"><span><i></i>Prédios que vão precisar de retrofit</span><span><b>R$ 380 bi</b> de mercado</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track">
+  <span>Seja dono</span><span>Retrofit</span><span>40 anos de marca</span><span>35 milhões de m²</span><span>Financiamento em até 120x</span><span>Implantação em até 2 meses</span>
+  <span>Seja dono</span><span>Retrofit</span><span>40 anos de marca</span><span>35 milhões de m²</span><span>Financiamento em até 120x</span><span>Implantação em até 2 meses</span>
+</div></div>
+
+<!-- 4. OLHO DE DONO -->
+<section class="band owner" id="franquia" aria-labelledby="h-dono">
+  <svg class="sweep draw" viewBox="0 0 420 420" aria-hidden="true"><path style="--k:0" d="M20 40 C 220 30 360 140 400 400"/><path style="--k:1" d="M20 100 C 190 96 310 190 340 400"/><path style="--k:2" d="M20 160 C 160 162 260 240 280 400"/><path style="--k:3" d="M20 220 C 130 224 205 290 220 400"/></svg>
+  <div class="wrap owner-grid">
+    <figure class="portrait">
+      <div class="frame mask"><img src="luciano-cybulski.jpg" alt="Luciano Cybulski, CEO e fundador da Cymaco Engenharia" width="800" height="500" loading="lazy"></div>
+      <figcaption class="sig rv" style="--k:2"><strong>Luciano Cybulski</strong><span>CEO e fundador da Cymaco Engenharia</span></figcaption>
+    </figure>
+    <div class="copy">
+      <h2 class="h2 title-bar rv" id="h-dono">Obra boa tem dono por perto</h2>
+      <p class="rv" style="--k:1">A Cymaco nasceu em 1982, em Erechim, com o construtor Elmir Cybulski. Três gerações e 35 milhões de m² depois, a família aprendeu uma coisa que nenhum manual substitui: a qualidade aparece quando o dono acompanha a obra de perto.</p>
+      <p class="rv" style="--k:2">Com canteiros em várias cidades, ninguém consegue estar em todos ao mesmo tempo. Por isso a Cymaco escolhe um dono para cada região: alguém que conhece a cidade, acompanha cada canteiro pessoalmente e tem por trás a marca, o método e a engenharia da Cymaco.</p>
+      <p class="slogan rv" style="--k:3">Superar o incrível é o que nos move.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. SOZINHO x FRANQUIA -->
+<section class="band ink" aria-labelledby="h-compare">
+  <div class="wrap">
+    <div class="compare-head">
+      <h2 class="h2 caps rv" id="h-compare">Abrir uma construtora é fácil. Crescer com segurança <span class="mark">exige método.</span></h2>
+      <p class="rv" style="--k:1">Veja o que muda quando você começa com a Cymaco.</p>
+    </div>
+    <table class="ctable">
+      <thead><tr><th scope="col"><span class="visually-hidden">Item</span></th><th scope="col">Construtora sozinha</th><th scope="col">Franquia Cymaco</th></tr></thead>
+      <tbody>
+        <tr class="rv" style="--k:0"><th scope="row">Marca</th><td class="no"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Convencer cada síndico do zero</td><td class="yes"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Mais de 40 anos de nome reconhecido</td></tr>
+        <tr class="rv" style="--k:1"><th scope="row">Método</th><td class="no"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Aprender errando na obra</td><td class="yes"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Processos testados em 35 milhões de m²</td></tr>
+        <tr class="rv" style="--k:2"><th scope="row">Suporte técnico</th><td class="no"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Resolver tudo sozinho</td><td class="yes"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Treinamento e engenharia da Cymaco</td></tr>
+        <tr class="rv" style="--k:3"><th scope="row">Venda</th><td class="no"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Depender do caixa do condomínio</td><td class="yes"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Financiamento em até 120x para o cliente</td></tr>
+        <tr class="rv" style="--k:4"><th scope="row">Compras</th><td class="no"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Preço de balcão</td><td class="yes"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Parcerias nacionais e poder de compra da rede</td></tr>
+      </tbody>
+    </table>
+    <div class="compare-cta rv"><a class="btn magnetic" href="#cadastro">Quero ser franqueado <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<!-- 5b. VÍDEOS DO LUCIANO -->
+<section class="band cool reels-band" aria-labelledby="h-reels">
+  <div class="wrap">
+    <div class="reels-head">
+      <h2 class="h2 rv" id="h-reels">Em 30 segundos, o Luciano explica</h2>
+      <div class="reels-side rv" style="--k:1">
+        <p class="lead">O CEO e fundador da Cymaco fala direto com quem está avaliando a franquia. Toque no vídeo para ouvir.</p>
+        <div class="reels-nav">
+          <button class="reels-arrow" type="button" data-dir="-1" aria-label="Vídeo anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
+          <button class="reels-arrow" type="button" data-dir="1" aria-label="Próximo vídeo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="reels rv" id="reels" style="--k:2" tabindex="0" aria-label="Vídeos do Luciano Cybulski. Use as setas ou role para o lado.">
+      <figure class="reel">
+        <div class="reel-frame">
+          <img class="reel-poster" src="luciano-modelo-poster.jpg" alt="" aria-hidden="true">
+          <video muted loop playsinline autoplay preload="none" poster="luciano-modelo-poster.jpg" aria-label="Vídeo: Luciano Cybulski fala sobre o modelo de negócio e o potencial de faturamento da franquia">
+            <source src="luciano-modelo.mp4" type="video/mp4">
+          </video>
+          <button class="reel-sound" type="button" aria-pressed="false"><span class="visually-hidden">Ativar som</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/><path class="off" d="m22 9-6 6M16 9l6 6"/></svg></button>
+        </div>
+        <figcaption>O modelo de lucro da franquia</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel-frame">
+          <img class="reel-poster" src="luciano-portfolio-poster.jpg" alt="" aria-hidden="true">
+          <video muted loop playsinline autoplay preload="none" poster="luciano-portfolio-poster.jpg" aria-label="Vídeo: Luciano Cybulski fala sobre usar o portfólio de 40 anos da Cymaco">
+            <source src="luciano-portfolio.mp4" type="video/mp4">
+          </video>
+          <button class="reel-sound" type="button" aria-pressed="false"><span class="visually-hidden">Ativar som</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/><path class="off" d="m22 9-6 6M16 9l6 6"/></svg></button>
+        </div>
+        <figcaption>40 anos de portfólio desde o primeiro dia</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel-frame">
+          <img class="reel-poster" src="luciano-app-poster.jpg" alt="" aria-hidden="true">
+          <video muted loop playsinline autoplay preload="none" poster="luciano-app-poster.jpg" aria-label="Vídeo: Luciano Cybulski fala sobre o aplicativo exclusivo do franqueado">
+            <source src="luciano-app.mp4" type="video/mp4">
+          </video>
+          <button class="reel-sound" type="button" aria-pressed="false"><span class="visually-hidden">Ativar som</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/><path class="off" d="m22 9-6 6M16 9l6 6"/></svg></button>
+        </div>
+        <figcaption>O aplicativo exclusivo do franqueado</figcaption>
+      </figure>
+      <div class="reel-cta">
+        <svg class="sweep" viewBox="0 0 420 420" aria-hidden="true"><path d="M20 40 C 220 30 360 140 400 400"/><path d="M20 100 C 190 96 310 190 340 400"/><path d="M20 160 C 160 162 260 240 280 400"/></svg>
+        <div style="position:relative;display:flex;flex-direction:column;gap:12px"><p>Quer conversar com o time de expansão?</p><span>Agende uma reunião e conheça os números, o modelo e o plano para a sua cidade.</span></div>
+        <a class="btn" href="#cadastro">Agendar reunião</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. O QUE VEM COM A SUA FRANQUIA -->
+<section class="band" aria-labelledby="h-pacote">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h2 rv" id="h-pacote">O que vem com a sua franquia</h2>
+    </div>
+    <div class="bento">
+      <article class="tile dark t1 rv tilt" style="--k:0">
+        <div class="blueprint" aria-hidden="true">
+          <svg viewBox="0 0 520 300">
+            <line class="dr" x1="20" y1="280" x2="500" y2="280"/>
+            <rect class="dr" x="150" y="40" width="220" height="240"/>
+            <line class="dr" x1="150" y1="88" x2="370" y2="88"/><line class="dr" x1="150" y1="136" x2="370" y2="136"/><line class="dr" x1="150" y1="184" x2="370" y2="184"/><line class="dr" x1="150" y1="232" x2="370" y2="232"/>
+            <line class="dr" x1="223" y1="40" x2="223" y2="280"/><line class="dr" x1="297" y1="40" x2="297" y2="280"/>
+            <line class="dr" x1="120" y1="40" x2="120" y2="280"/><line class="dr" x1="112" y1="40" x2="128" y2="40"/><line class="dr" x1="112" y1="280" x2="128" y2="280"/>
+            <line class="dr" x1="150" y1="20" x2="370" y2="20"/><line class="dr" x1="150" y1="12" x2="150" y2="28"/><line class="dr" x1="370" y1="12" x2="370" y2="28"/>
+            <path class="dr acc" d="M150 136 C 260 120 330 170 370 232"/><path class="dr acc" d="M150 184 C 240 172 300 210 330 280"/>
+            <rect class="dr" x="400" y="200" width="70" height="80"/><line class="dr" x1="400" y1="240" x2="470" y2="240"/>
+            <rect class="dr" x="50" y="230" width="60" height="50"/>
+          </svg>
+        </div>
+        <h3>Método de obra</h3>
+        <p>Padrões de execução, segurança e garantia usados em 35 milhões de m².</p>
+      </article>
+      <article class="tile t2 rv tilt" style="--k:1">
+        <svg class="ti" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 34V8h14v26M22 16h10v18M4 34h32M12 14h4M12 20h4M12 26h4M26 22h2M26 28h2"/></svg>
+        <h3>Marca Cymaco na sua região</h3>
+        <p>Mais de 40 anos de reputação abrindo a porta dos condomínios.</p>
+      </article>
+      <article class="tile t3 rv tilt" style="--k:2">
+        <svg class="ti" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 24a14 14 0 0 1 28 0M4 24h32v4H4zM20 10V6M14 14l-1-3M26 14l1-3"/></svg>
+        <h3>Treinamento e suporte de engenharia</h3>
+        <p>Sua equipe preparada antes da primeira obra.</p>
+      </article>
+      <article class="tile red t4 rv tilt" style="--k:3">
+        <p class="big120 num" aria-hidden="true">120x</p>
+        <h3>Financiamento em até 120x</h3>
+        <p>O condomínio aprova a obra sem precisar ter o caixa todo. É o argumento que ajuda você a fechar contrato.</p>
+      </article>
+      <article class="tile t5 rv tilt" style="--k:4">
+        <svg class="ti" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 20l4 4 8-8M20 4l13 5v9c0 8-5.5 14-13 18C12.5 32 7 26 7 18V9z"/></svg>
+        <h3>Parcerias nacionais</h3>
+        <p>BASF, Sika, Vedacit, Suvinil, Sherwin-Williams, Portobello e outras marcas com condição de rede.</p>
+      </article>
+      <article class="tile t6 rv tilt" style="--k:5">
+        <svg class="ti" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 36s-11-10.5-11-19a11 11 0 0 1 22 0c0 8.5-11 19-11 19z"/><circle cx="20" cy="17" r="4"/></svg>
+        <h3>Território exclusivo</h3>
+        <p>Sua região é sua.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<div class="marquee ghost" aria-label="Marcas parceiras da rede Cymaco"><div class="marquee-track">
+  <span>BASF</span><span>Sika</span><span>Vedacit</span><span>Suvinil</span><span>Sherwin-Williams</span><span>Portobello</span><span>Eliane</span><span>Viapol</span><span>Denver</span><span>Penetron</span>
+  <span aria-hidden="true">BASF</span><span aria-hidden="true">Sika</span><span aria-hidden="true">Vedacit</span><span aria-hidden="true">Suvinil</span><span aria-hidden="true">Sherwin-Williams</span><span aria-hidden="true">Portobello</span><span aria-hidden="true">Eliane</span><span aria-hidden="true">Viapol</span><span aria-hidden="true">Denver</span><span aria-hidden="true">Penetron</span>
+</div></div>
+
+<!-- 7. INVESTIMENTO -->
+<section class="band cool" aria-labelledby="h-invest">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h2 rv" id="h-invest">Quanto custa e para quem é</h2>
+    </div>
+    <div class="invest">
+      <div class="ledger rv" style="--k:1">
+        <div class="ledger-row"><span>Investimento total</span><b class="num">a partir de R$&nbsp;250 mil</b></div>
+        <div class="ledger-row"><span>Taxa de franquia (inclusa)</span><b class="num">R$&nbsp;150 mil</b></div>
+        <div class="ledger-row"><span>Royalties · Taxa de propaganda</span><b class="num">8% · 2%</b></div>
+        <div class="ledger-row"><span>Retorno estimado</span><b class="num">6 a 12 meses</b></div>
+        <div class="ledger-row"><span>Lucratividade</span><b class="num">20% a 70%</b></div>
+        <div class="ledger-row hl"><span>Potencial de faturamento</span><b class="num">até R$&nbsp;6 milhões/ano</b></div>
+        <p class="ledger-note">Valores de referência. A composição completa é apresentada na reunião com o time de expansão.</p>
+      </div>
+      <div class="fit">
+        <h3 class="rv" style="--k:1">Para quem é</h3>
+        <ul>
+          <li class="rv" style="--k:2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Engenheiros e arquitetos que querem ter o próprio negócio.</span></li>
+          <li class="rv" style="--k:3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Donos de construtora que querem uma marca forte e um serviço de alto valor.</span></li>
+          <li class="rv" style="--k:4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Empresários e investidores com capital disponível que querem entrar na construção com método. Não é da área? Basta ter um engenheiro contratado na franquia.</span></li>
+        </ul>
+        <p class="position rv" style="--k:5">A franquia Cymaco é para quem tem capital para investir e quer comandar a própria operação de retrofit.</p>
+        <div class="rv" style="--k:6"><a class="btn magnetic" href="#cadastro">Ver se minha cidade está disponível <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. COMO FUNCIONA -->
+<section class="band ink" id="como-funciona" aria-labelledby="h-steps">
+  <div class="wrap steps-grid">
+    <div class="steps-intro">
+      <h2 class="h2 rv" id="h-steps">Do cadastro à primeira obra</h2>
+      <p class="rv" style="--k:1">Implantação em até 2 meses depois da assinatura.</p>
+      <div class="rv" style="--k:2"><a class="btn magnetic" href="#cadastro">Começar pelo cadastro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <div class="steps" id="steps">
+      <span class="rail" aria-hidden="true"><i id="rail"></i></span>
+      <ol>
+        <li class="step" style="--i:0"><span class="n" aria-hidden="true">1</span><div><h3>Cadastro</h3><p>Você conta onde quer atuar e quanto pretende investir.</p></div></li>
+        <li class="step" style="--i:1"><span class="n" aria-hidden="true">2</span><div><h3>Conversa com o time de expansão</h3><p>Confirmamos se sua cidade está disponível e tiramos as primeiras dúvidas.</p></div></li>
+        <li class="step" style="--i:2"><span class="n" aria-hidden="true">3</span><div><h3>Apresentação completa</h3><p>Números, contrato e plano para a sua região, numa reunião com a Cymaco.</p></div></li>
+        <li class="step" style="--i:3"><span class="n" aria-hidden="true">4</span><div><h3>Assinatura e implantação</h3><p>Em até 2 meses, sua operação está pronta e sua equipe treinada no método Cymaco.</p></div></li>
+        <li class="step" style="--i:4"><span class="n" aria-hidden="true">5</span><div><h3>Primeiras obras</h3><p>Você vende e executa com o suporte técnico e comercial da franqueadora.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 9. QUEM JÁ É FRANQUEADO -->
+<section class="band" id="franqueados" aria-labelledby="h-franqueados">
+  <div class="wrap">
+    <h2 class="visually-hidden" id="h-franqueados">Quem já é franqueado</h2>
+    <div class="proof-head">
+      <div>
+        <p class="bigquote rv">“Em apenas 12 meses, nossa franquia faturou <span class="hl">R$&nbsp;<span data-count="6">6</span> milhões</span>.”</p>
+        <p class="bigquote-src rv" style="--k:1">Franqueado Cymaco, São Paulo</p>
+      </div>
+      <p class="lead rv" style="--k:2;color:var(--body)">Uma rede que começou em 1982 e hoje tem unidades em quatro estados, com franqueados que usam a marca, o método e as parcerias da Cymaco.</p>
+    </div>
+    <div class="timeline rv" id="timeline">
+      <span class="bar" aria-hidden="true"></span>
+      <div class="milestone"><b class="num">1982</b><span>Fundação em Erechim (RS)</span></div>
+      <div class="milestone"><b class="num">2008</b><span>Início da franquia</span></div>
+      <div class="milestone"><b class="num">2010</b><span>Associada à ABF</span></div>
+      <div class="milestone"><b class="num">Hoje</b><span>Unidades em 4 estados</span></div>
+    </div>
+    <ul class="cities rv" aria-label="Cidades com unidades Cymaco">
+      <li><i class="pin" style="--d:0"></i>São Paulo</li>
+      <li><i class="pin" style="--d:6"></i>Campinas</li>
+      <li><i class="pin" style="--d:1"></i>Curitiba</li>
+      <li><i class="pin" style="--d:2"></i>Goiânia</li>
+      <li><i class="pin" style="--d:3"></i>Florianópolis</li>
+      <li><i class="pin" style="--d:4"></i>Balneário Camboriú</li>
+      <li><i class="pin" style="--d:5"></i>Jurerê</li>
+    </ul>
+    <div class="quotes rv" id="quotes" tabindex="0" aria-label="Depoimentos de franqueados. Role para o lado para ver mais.">
+      <blockquote class="quote"><p>“Principal motivo de se tornar uma franqueada é fazer parte de uma marca consolidada.”</p><footer><b>Franqueada Cymaco</b> · Santa Catarina</footer></blockquote>
+      <blockquote class="quote"><p>“O fator de ser reconhecido e ter credibilidade, ser referência na cidade.”</p><footer><b>Franqueado Cymaco</b> · Santa Catarina</footer></blockquote>
+      <blockquote class="quote"><p>“Fazer parte de uma rede estruturada nos torna mais fortes: processos padronizados, poder de compra ampliado.”</p><footer><b>Franqueado Cymaco</b> · São Paulo</footer></blockquote>
+    </div>
+    <div class="proof-cta rv"><a class="btn magnetic" href="#cadastro">Quero ser franqueado <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<!-- 10. PERGUNTAS -->
+<section class="band cool" id="perguntas" aria-labelledby="h-faq">
+  <div class="wrap faq-grid">
+    <h2 class="h2 rv" id="h-faq">Perguntas de quem está avaliando a franquia</h2>
+    <div class="faq-list rv" style="--k:1">
+      <details><summary>Preciso ser engenheiro para ser franqueado?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Não. Se você é engenheiro ou arquiteto, já sai na frente. Se não é da área, basta ter um engenheiro contratado na sua franquia.</p></details>
+      <details><summary>Quanto preciso investir?<span class="plus" aria-hidden="true"></span></summary><p class="answer">O investimento total começa em R$&nbsp;250 mil, com a taxa de franquia de R$&nbsp;150 mil inclusa. Os royalties são de 8% e a taxa de propaganda, de 2%.</p></details>
+      <details><summary>Em quanto tempo tenho o retorno?<span class="plus" aria-hidden="true"></span></summary><p class="answer">O retorno estimado é de 6 a 12 meses, com lucratividade entre 20% e 70% por obra.</p></details>
+      <details><summary>Quanto tempo leva para fechar a primeira obra?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Em média, de 6 meses a 1 ano, com o suporte comercial da Cymaco e o financiamento em até 120x ajudando no fechamento.</p></details>
+      <details><summary>Minha cidade está disponível?<span class="plus" aria-hidden="true"></span></summary><p class="answer">A Cymaco trabalha com exclusividade de território. Preencha o cadastro e o time de expansão confirma se a sua cidade ainda está aberta.</p></details>
+      <details><summary>Já tenho uma construtora. Posso ser franqueado?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Sim, esse é um dos perfis que mais se encaixam: você soma a sua estrutura à marca, ao método e às parcerias da Cymaco.</p></details>
+      <details><summary>Que suporte eu recebo?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Treinamento, suporte de engenharia e comercial, financiamento em até 120x para seus clientes e as parcerias nacionais da rede.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 11. FORMULÁRIO -->
+<section class="band wine lead-band" id="cadastro" aria-labelledby="h-form">
+  <svg class="sweep draw" viewBox="0 0 420 420" aria-hidden="true"><path style="--k:0" d="M20 40 C 220 30 360 140 400 400"/><path style="--k:1" d="M20 100 C 190 96 310 190 340 400"/><path style="--k:2" d="M20 160 C 160 162 260 240 280 400"/><path style="--k:3" d="M20 220 C 130 224 205 290 220 400"/></svg>
+  <div class="wrap form-grid">
+    <div class="form-copy">
+      <h2 class="h2 caps rv" id="h-form">Tenha a sua própria Cymaco</h2>
+      <p class="lead rv" style="--k:1">Preencha seus dados e agende uma reunião com o time de expansão. Você conhece os números, o modelo e o plano para abrir a sua operação de retrofit.</p>
+      <ul class="rv" style="--k:2">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Investimento a partir de R$&nbsp;250 mil</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Retorno estimado de 6 a 12 meses</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Implantação em até 2 meses</li>
+      </ul>
+    </div>
+    <div class="card rv" style="--k:1">
+      <form id="leadForm" novalidate data-endpoint="">
+        <div class="field"><label for="f-nome">Nome</label><input type="text" id="f-nome" name="nome" autocomplete="name" placeholder="Seu nome completo…" required><span class="err" aria-live="polite"></span></div>
+        <div class="row2">
+          <div class="field"><label for="f-whats">WhatsApp</label><input type="tel" id="f-whats" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(48) 99999-9999…" required><span class="err" aria-live="polite"></span></div>
+          <div class="field"><label for="f-email">E-mail</label><input type="email" id="f-email" name="email" autocomplete="email" spellcheck="false" placeholder="voce@empresa.com…" required><span class="err" aria-live="polite"></span></div>
+        </div>
+        <div class="field"><label for="f-cidade">Cidade e estado onde quer atuar</label><input type="text" id="f-cidade" name="cidade" autocomplete="address-level2" placeholder="Ex.: Campinas/SP…" required><span class="err" aria-live="polite"></span></div>
+        <fieldset class="field" data-group="capital"><legend>Capital disponível para investir</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="capital" value="R$ 150 a 250 mil" required><span>R$ 150 a 250 mil</span></label>
+            <label class="chip"><input type="radio" name="capital" value="R$ 250 a 400 mil"><span>R$ 250 a 400 mil</span></label>
+            <label class="chip"><input type="radio" name="capital" value="Acima de R$ 400 mil"><span>Acima de R$ 400 mil</span></label>
+          </div><span class="err" aria-live="polite"></span></fieldset>
+        <fieldset class="field" data-group="perfil"><legend>Seu perfil</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="perfil" value="Engenheiro(a) ou arquiteto(a)" required><span>Engenheiro(a) ou arquiteto(a)</span></label>
+            <label class="chip"><input type="radio" name="perfil" value="Tenho construtora ou empresa da construção"><span>Tenho construtora ou empresa da construção</span></label>
+            <label class="chip"><input type="radio" name="perfil" value="Empresário(a) de outro setor"><span>Empresário(a) de outro setor</span></label>
+            <label class="chip"><input type="radio" name="perfil" value="Investidor(a)"><span>Investidor(a)</span></label>
+          </div><span class="err" aria-live="polite"></span></fieldset>
+        <fieldset class="field" data-group="prazo"><legend>Quando pretende começar</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="prazo" value="Em até 3 meses" required><span>Em até 3 meses</span></label>
+            <label class="chip"><input type="radio" name="prazo" value="Em 3 a 6 meses"><span>Em 3 a 6 meses</span></label>
+            <label class="chip"><input type="radio" name="prazo" value="Mais de 6 meses"><span>Mais de 6 meses</span></label>
+          </div><span class="err" aria-live="polite"></span></fieldset>
+        <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term">
+        <div class="form-foot">
+          <button class="btn" type="submit" id="f-submit">Agendar minha reunião <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p>O time de expansão da Cymaco chama você no WhatsApp para marcar o melhor horário. Ao enviar, você concorda com a <a href="#privacidade">política de privacidade</a>.</p>
+        </div>
+      </form>
+      <div class="success" id="formSuccess" hidden tabindex="-1">
+        <h3>Recebemos seu cadastro.</h3>
+        <p>O time de expansão da Cymaco vai chamar você no WhatsApp para marcar a reunião. Se preferir, fale agora com a gente.</p>
+        <a class="btn" id="waLink" href="https://wa.me/5548996822500" target="_blank" rel="noopener">Falar no WhatsApp agora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 12. RODAPÉ -->
+<footer class="site-footer">
+  <svg class="sweep draw" viewBox="0 0 420 420" aria-hidden="true"><path style="--k:0" d="M20 40 C 220 30 360 140 400 400"/><path style="--k:1" d="M20 100 C 190 96 310 190 340 400"/><path style="--k:2" d="M20 160 C 160 162 260 240 280 400"/><path style="--k:3" d="M20 220 C 130 224 205 290 220 400"/></svg>
+  <div class="wrap">
+    <div class="foot-cta">
+      <p class="h2 caps rv">Mais de 40 anos de obras. A próxima pode ser na sua cidade.</p>
+      <a class="btn magnetic rv" style="--k:1" href="#cadastro">Quero ser franqueado <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="foot-info">
+      <div>
+        <img src="logo-cymaco-branco.png" alt="Cymaco Engenharia" width="471" height="113" loading="lazy">
+        <div class="badges"><span>Associada ABF</span><span>Desde 1982</span></div>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>WhatsApp <a href="https://wa.me/5548996822500" target="_blank" rel="noopener">(48) 99682-2500</a><br>E-mail: contato@cymaco.com.br</p>
+      </div>
+      <div>
+        <h3>Redes</h3>
+        <p><a href="https://www.instagram.com/cymaco.engenharia/" target="_blank" rel="noopener">Instagram</a><br><a href="https://cymaco.eng.br/" target="_blank" rel="noopener">Site da Cymaco</a></p>
+      </div>
+    </div>
+    <p class="legal" id="privacidade"><span translate="no">CYMACO FRANCHISING LTDA</span> · CNPJ 04.497.809/0001-21 · Rua Dep. Benedito Terézio de Carvalho Jr., 889, Estreito, Florianópolis/SC, CEP 88070-340 · Política de privacidade (link a inserir)</p>
+  </div>
+</footer>
+
+<div class="mobile-cta hide" id="mobileCta"><a class="btn" href="#cadastro">Ver se minha cidade está disponível</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function () {
+  var root = document.documentElement;
+  root.classList.add('js');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine = window.matchMedia('(pointer: fine)').matches;
+  var nf = new Intl.NumberFormat('pt-BR');
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(tag, attrs, parent) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+
+  /* ---------- prédio isométrico do hero, construído andar por andar ---------- */
+  (function buildTower() {
+    var host = document.getElementById('tower'); if (!host) return;
+    var svg = el('svg', { viewBox: '80 40 410 600', 'aria-hidden': 'true' }, host);
+    var cx = 260, base = 450, s = 36, c = Math.cos(Math.PI / 6), sn = Math.sin(Math.PI / 6);
+    function P(x, y, z) { return [cx + (x - y) * c * s, base + (x + y) * sn * s - z * s]; }
+    function poly(pts) { return pts.map(function (p) { return p[0].toFixed(1) + ',' + p[1].toFixed(1); }).join(' '); }
+    var W = 4.2, D = 3.2, FH = 0.92, N = 12;
+    /* sombra no chão */
+    el('polygon', { points: poly([P(-0.6, -0.6, 0), P(W + 1.4, -0.6, 0), P(W + 1.4, D + 1.4, 0), P(-0.6, D + 1.4, 0)]), fill: 'rgba(255,255,255,0.03)', stroke: 'rgba(255,255,255,0.08)' }, svg);
+    var w = 0;
+    for (var f = 0; f < N; f++) {
+      var z0 = f * FH, z1 = z0 + FH - 0.08;
+      var g = el('g', { class: 'floor', style: '--f:' + f }, svg);
+      /* face esquerda (y = D) e direita (x = W) */
+      el('polygon', { points: poly([P(0, D, z0), P(W, D, z0), P(W, D, z1), P(0, D, z1)]), fill: '#1E2228', stroke: 'rgba(255,255,255,0.22)', 'stroke-width': 1 }, g);
+      el('polygon', { points: poly([P(W, 0, z0), P(W, D, z0), P(W, D, z1), P(W, 0, z1)]), fill: '#2A2F36', stroke: 'rgba(255,255,255,0.22)', 'stroke-width': 1 }, g);
+      /* janelas */
+      for (var i = 0; i < 5; i++) {
+        var x0 = 0.25 + i * 0.8, x1 = x0 + 0.5, za = z0 + 0.22, zb = z1 - 0.18;
+        var lit = ((f * 7 + i * 3) % 5 === 0);
+        el('polygon', { points: poly([P(x0, D, za), P(x1, D, za), P(x1, D, zb), P(x0, D, zb)]), fill: 'rgba(255,255,255,0.08)' }, g);
+        if (lit) { el('polygon', { class: 'lit', style: '--w:' + (w++), points: poly([P(x0, D, za), P(x1, D, za), P(x1, D, zb), P(x0, D, zb)]), fill: '#ED332F' }, g); }
+      }
+      for (var j = 0; j < 4; j++) {
+        var y0 = 0.25 + j * 0.75, y1 = y0 + 0.45, zc = z0 + 0.22, zd = z1 - 0.18;
+        el('polygon', { points: poly([P(W, y0, zc), P(W, y1, zc), P(W, y1, zd), P(W, y0, zd)]), fill: 'rgba(255,255,255,0.06)' }, g);
+      }
+      if (f === N - 1) {
+        el('polygon', { points: poly([P(0, 0, z1), P(W, 0, z1), P(W, D, z1), P(0, D, z1)]), fill: '#33393F', stroke: 'rgba(255,255,255,0.3)' }, g);
+      }
+    }
+    /* linhas da logo envolvendo o prédio */
+    var rings = [[2.0, 0], [3.4, 1], [4.8, 2]];
+    rings.forEach(function (r) {
+      var a = P(-1.4, D + 0.6, r[0] + 2.2), b = P(W + 1.6, -0.8, r[0] + 6.4), m1 = P(1.2, D + 2.6, r[0] + 4.8), m2 = P(W + 0.4, 0.4, r[0] + 7.6);
+      el('path', { class: 'ring', style: '--k:' + r[1], d: 'M' + a[0] + ' ' + a[1] + ' C ' + m1[0] + ' ' + m1[1] + ' ' + m2[0] + ' ' + m2[1] + ' ' + b[0] + ' ' + b[1], fill: 'none', stroke: '#ED332F', 'stroke-width': 5, 'stroke-linecap': 'round', opacity: 0.9 - r[1] * 0.2 }, svg);
+    });
+    var hv = document.getElementById('heroVisual');
+    requestAnimationFrame(function () { setTimeout(function () { host.classList.add('built'); hv.classList.add('built'); }, reduce ? 0 : 250); });
+  })();
+
+  /* ---------- skyline da seção 3 ---------- */
+  (function buildSkyline() {
+    var svg = document.getElementById('skylineSvg'); if (!svg) return;
+    var x = 6, i = 0, seed = 11;
+    function rnd() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+    while (x < 550) {
+      var w = 34 + Math.round(rnd() * 34), h = 70 + Math.round(rnd() * 200);
+      if (x + w > 556) w = 556 - x;
+      var hot = (i % 3 === 1) || (i % 5 === 0);
+      var g = el('g', {}, svg);
+      el('rect', { class: 'bld' + (hot ? ' hot' : ''), style: '--d:' + i, x: x, y: 300 - h, width: w, height: h, rx: 2 }, g);
+      for (var yy = 300 - h + 12; yy < 290; yy += 16) for (var xx = x + 7; xx < x + w - 9; xx += 11) el('rect', { class: 'win', x: xx, y: yy, width: 5, height: 7 }, g);
+      x += w + 6; i++;
+    }
+  })();
+
+  /* ---------- entradas ao entrar na tela ---------- */
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      if (!e.target.closest('.stats')) e.target.querySelectorAll('[data-count]').forEach(function (n) { count(n, 300); });
+      io.unobserve(e.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+  document.querySelectorAll('.rv, .mask, .draw').forEach(function (n) { io.observe(n); });
+
+  /* contadores: zeram antes de aparecer e só começam com o número já visível na tela */
+  function count(n, wait) {
+    if (n.dataset.done) return; n.dataset.done = '1';
+    var end = parseFloat(n.dataset.count);
+    if (reduce) { n.textContent = nf.format(end); return; }
+    var t0 = null, dur = 2200, run = n.dataset.run;
+    function step(t) { if (n.dataset.run !== run) return; if (!t0) t0 = t; var p = Math.min(1, (t - t0) / dur), v = 1 - Math.pow(1 - p, 2.2); n.textContent = nf.format(Math.round(end * v)); if (p < 1) requestAnimationFrame(step); }
+    n.textContent = '0';
+    setTimeout(function () { requestAnimationFrame(step); }, wait || 0);
+  }
+  if (!reduce) document.querySelectorAll('.stats [data-count]').forEach(function (n) { n.textContent = '0'; });
+  var statsBox = document.querySelector('.stats');
+  if (statsBox) {
+    /* conta de novo toda vez que a faixa volta para a tela */
+    var sio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        var nums = statsBox.querySelectorAll('[data-count]');
+        if (e.isIntersecting) {
+          nums.forEach(function (n, i) { delete n.dataset.done; count(n, 350 + i * 180); });
+        } else if (!reduce) {
+          nums.forEach(function (n) { n.dataset.done = '1'; n.dataset.run = String((+n.dataset.run || 0) + 1); n.textContent = '0'; });
+        }
+      });
+    }, { threshold: 0.3 });
+    sio.observe(statsBox);
+  }
+
+  /* ---------- rolagem com GSAP ---------- */
+  if (window.gsap && window.ScrollTrigger && !reduce) {
+    gsap.registerPlugin(ScrollTrigger);
+    var rail = document.getElementById('rail');
+    if (rail) gsap.fromTo(rail, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '#steps', start: 'top 70%', end: 'bottom 60%', scrub: true } });
+    var tw = document.getElementById('tower');
+    if (tw) gsap.to(tw, { yPercent: -8, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+    document.querySelectorAll('.sweep').forEach(function (s) {
+      gsap.to(s, { yPercent: 14, rotate: 4, ease: 'none', scrollTrigger: { trigger: s.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } });
+    });
+  }
+
+  /* ---------- botões: preenchimento pelo lado do mouse e efeito magnético ---------- */
+  document.querySelectorAll('.btn').forEach(function (b) {
+    b.addEventListener('pointerenter', function (e) { var r = b.getBoundingClientRect(); b.style.setProperty('--ox', (e.clientX - r.left < r.width / 2) ? 'left' : 'right'); });
+  });
+  if (fine && !reduce) {
+    document.querySelectorAll('.magnetic').forEach(function (b) {
+      b.addEventListener('pointermove', function (e) {
+        var rc = b.getBoundingClientRect();
+        b.style.setProperty('--mx', ((e.clientX - rc.left - rc.width / 2) * 0.18).toFixed(1) + 'px');
+        b.style.setProperty('--my', ((e.clientY - rc.top - rc.height / 2) * 0.3).toFixed(1) + 'px');
+      });
+      b.addEventListener('pointerleave', function () { b.style.setProperty('--mx', '0px'); b.style.setProperty('--my', '0px'); });
+    });
+    document.querySelectorAll('.tilt').forEach(function (t) {
+      t.addEventListener('pointermove', function (e) {
+        var rc = t.getBoundingClientRect(), x = (e.clientX - rc.left) / rc.width - 0.5, y = (e.clientY - rc.top) / rc.height - 0.5;
+        t.style.transform = 'perspective(900px) rotateX(' + (-y * 4).toFixed(2) + 'deg) rotateY(' + (x * 5).toFixed(2) + 'deg)';
+      });
+      t.addEventListener('pointerleave', function () { t.style.transform = ''; });
+    });
+  }
+
+  /* ---------- depoimentos: arrastar ---------- */
+  var q = document.getElementById('quotes');
+  if (q && fine) {
+    var down = false, sx = 0, sl = 0;
+    q.addEventListener('pointerdown', function (e) { down = true; sx = e.clientX; sl = q.scrollLeft; q.classList.add('dragging'); });
+    window.addEventListener('pointerup', function () { down = false; q.classList.remove('dragging'); });
+    q.addEventListener('pointermove', function (e) { if (down) q.scrollLeft = sl - (e.clientX - sx); });
+  }
+
+  /* ---------- vídeos do Luciano: tocam sem som quando aparecem; toque liga o som ----------
+     O vídeo é baixado inteiro e tocado da memória. Assim ele toca em celulares (iPhone,
+     navegador do WhatsApp) mesmo quando o servidor não entrega o arquivo em partes. */
+  (function reels() {
+    var figs = document.querySelectorAll('.reel'); if (!figs.length) return;
+    function vid(f) { return f.querySelector('video'); }
+    function setSound(f, on) {
+      var v = vid(f), b = f.querySelector('.reel-sound');
+      v.muted = !on; b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.querySelector('.visually-hidden').textContent = on ? 'Desativar som' : 'Ativar som';
+      f.classList.toggle('playing', on);
+    }
+    function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+    function prep(v) {
+      if (v._prep) return v._prep;
+      var s = v.querySelector('source'), url = s ? s.getAttribute('src') : v.getAttribute('src');
+      v._prep = fetch(url).then(function (r) { if (!r.ok) throw new Error('video'); return r.blob(); })
+        .then(function (b) {
+          v.src = URL.createObjectURL(b.type ? b : new Blob([b], { type: 'video/mp4' }));
+          v.load(); v._ready = true;
+        })
+        .catch(function () { if (s) { v.src = url; v.load(); } v._ready = true; });
+      return v._prep;
+    }
+    figs.forEach(function (f) {
+      var v = vid(f), frame = f.querySelector('.reel-frame');
+      /* a capa só some quando o vídeo realmente começa a tocar; se o vídeo não carregar, a capa continua */
+      v.addEventListener('playing', function () { frame.classList.add('live'); });
+      v.addEventListener('error', function () { frame.classList.remove('live'); }, true);
+      function toggle() {
+        var turnOn = v.muted;
+        figs.forEach(function (o) { if (o !== f) setSound(o, false); });
+        setSound(f, turnOn);
+        if (v._ready) { if (turnOn) { try { v.currentTime = 0; } catch (e) {} } play(v); }
+        else { prep(v).then(function () { play(v); }); }
+      }
+      f.querySelector('.reel-frame').addEventListener('click', function (e) { if (!e.target.closest('.reel-sound')) toggle(); });
+      f.querySelector('.reel-sound').addEventListener('click', toggle);
+    });
+    var track = document.getElementById('reels'), arrows = document.querySelectorAll('.reels-arrow');
+    function upd() { var max = track.scrollWidth - track.clientWidth - 4; document.querySelector('.reels-nav').hidden = max <= 0; arrows[0].disabled = track.scrollLeft <= 4; arrows[1].disabled = track.scrollLeft >= max; }
+    arrows.forEach(function (a) { a.addEventListener('click', function () { var step = figs[0].getBoundingClientRect().width + 20; track.scrollBy({ left: step * +a.dataset.dir, behavior: reduce ? 'auto' : 'smooth' }); }); });
+    track.addEventListener('scroll', upd, { passive: true }); window.addEventListener('resize', upd); upd();
+    /* baixa os vídeos um pouco antes da seção aparecer, para o toque já encontrar o vídeo pronto */
+    var band = document.querySelector('.reels-band');
+    var pre = new IntersectionObserver(function (es) {
+      if (es.some(function (e) { return e.isIntersecting; })) { figs.forEach(function (f) { prep(vid(f)); }); pre.disconnect(); }
+    }, { rootMargin: '800px 0px' });
+    if (band) pre.observe(band);
+    if (reduce) return;
+    var vio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        var v = e.target.querySelector('video');
+        if (e.isIntersecting) { prep(v).then(function () { play(v); }); }
+        else { v.pause(); setSound(e.target, false); }
+      });
+    }, { threshold: 0.55 });
+    figs.forEach(function (f) { vio.observe(f); });
+  })();
+
+  /* ---------- barra fixa no celular ---------- */
+  var mc = document.getElementById('mobileCta'), cad = document.getElementById('cadastro'), topo = document.getElementById('topo');
+  if (mc && cad && topo) {
+    var vis = { cad: false, top: true };
+    function upd() { mc.classList.toggle('hide', vis.cad || vis.top); }
+    new IntersectionObserver(function (es) { es.forEach(function (e) { vis.cad = e.isIntersecting; }); upd(); }, { threshold: 0.15 }).observe(cad);
+    new IntersectionObserver(function (es) { es.forEach(function (e) { vis.top = e.isIntersecting; }); upd(); }, { threshold: 0.35 }).observe(topo);
+  }
+
+  /* ---------- UTMs ---------- */
+  try {
+    var qs = new URLSearchParams(window.location.search);
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (k) { var i = document.querySelector('input[name="' + k + '"]'); if (i && qs.get(k)) i.value = qs.get(k); });
+  } catch (e) {}
+
+  /* ---------- formulário ---------- */
+  var form = document.getElementById('leadForm');
+  if (form) {
+    var msgs = { nome: 'Digite seu nome.', whatsapp: 'Digite um WhatsApp com DDD, como (48) 99999-9999.', email: 'Digite um e-mail válido, como voce@empresa.com.', cidade: 'Digite a cidade e o estado onde quer atuar.', capital: 'Escolha uma faixa de capital.', perfil: 'Escolha o seu perfil.', prazo: 'Escolha quando pretende começar.' };
+    var wa = form.querySelector('[name="whatsapp"]');
+    wa.addEventListener('input', function () {
+      var d = wa.value.replace(/\D/g, '').slice(0, 11);
+      wa.value = d.length > 10 ? '(' + d.slice(0, 2) + ') ' + d.slice(2, 7) + '-' + d.slice(7) : d.length > 6 ? '(' + d.slice(0, 2) + ') ' + d.slice(2, 6) + '-' + d.slice(6) : d.length > 2 ? '(' + d.slice(0, 2) + ') ' + d.slice(2) : d;
+    });
+    function check() {
+      var first = null;
+      ['nome', 'whatsapp', 'email', 'cidade'].forEach(function (n) {
+        var i = form.querySelector('[name="' + n + '"]'), box = i.closest('.field'), err = box.querySelector('.err'), v = i.value.trim();
+        var ok = v.length > 1 && (n !== 'email' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) && (n !== 'whatsapp' || v.replace(/\D/g, '').length >= 10);
+        box.classList.toggle('invalid', !ok); err.textContent = ok ? '' : msgs[n]; i.setAttribute('aria-invalid', ok ? 'false' : 'true');
+        if (!ok && !first) first = i;
+      });
+      ['capital', 'perfil', 'prazo'].forEach(function (n) {
+        var box = form.querySelector('[data-group="' + n + '"]'), err = box.querySelector('.err'), ok = !!form.querySelector('[name="' + n + '"]:checked');
+        err.textContent = ok ? '' : msgs[n]; if (!ok && !first) first = box.querySelector('input');
+      });
+      return first;
+    }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var bad = check(); if (bad) { bad.focus(); return; }
+      var btn = document.getElementById('f-submit'); btn.disabled = true; btn.textContent = 'Enviando…';
+      var data = Object.fromEntries(new FormData(form).entries());
+      var msg = 'Olá! Vim pela página da franquia Cymaco e quero saber se minha cidade está disponível. Sou ' + data.nome + ', de ' + data.cidade + '.';
+      document.getElementById('waLink').href = 'https://wa.me/5548996822500?text=' + encodeURIComponent(msg);
+      var endpoint = form.dataset.endpoint;
+      var send = endpoint ? fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) }) : Promise.resolve();
+      send.catch(function () {}).then(function () {
+        form.hidden = true; var s = document.getElementById('formSuccess'); s.hidden = false; s.focus();
+        if (window.fbq) { try { window.fbq('track', 'Lead'); } catch (err) {} }
+        if (window.dataLayer) { window.dataLayer.push({ event: 'lead_franquia', capital: data.capital, perfil: data.perfil, prazo: data.prazo }); }
+      });
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
