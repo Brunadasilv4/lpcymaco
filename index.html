@@ -383,6 +383,7 @@ section { position: relative; }
 .field input:focus-visible { outline: none; border-color: var(--red); background: #fff; box-shadow: 0 0 0 3px rgba(210, 52, 46, 0.16); }
 .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
 fieldset.field { border: 0; padding: 0; margin: 0 0 20px; min-width: 0; }
+.field[hidden] { display: none; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
 .chip { position: relative; }
 .chip input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
@@ -814,6 +815,13 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; min-width: 0; }
             <label class="chip"><input type="radio" name="prazo" value="Em 3 a 6 meses"><span>Em 3 a 6 meses</span></label>
             <label class="chip"><input type="radio" name="prazo" value="Mais de 6 meses"><span>Mais de 6 meses</span></label>
           </div><span class="err" aria-live="polite"></span></fieldset>
+        <fieldset class="field" data-group="indicado"><legend>Alguém te indicou?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="indicado" value="Sim"><span>Sim</span></label>
+            <label class="chip"><input type="radio" name="indicado" value="Não"><span>Não</span></label>
+          </div><span class="err" aria-live="polite"></span></fieldset>
+        <div class="field" id="f-indicador-box" hidden><label for="f-indicador">Quem te indicou?</label><input type="text" id="f-indicador" name="indicado_por" autocomplete="off" placeholder="Nome de quem te indicou…"><span class="err" aria-live="polite"></span></div>
+        <input type="hidden" name="ref">
         <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term">
         <div class="form-foot">
           <button class="btn" type="submit" id="f-submit">Agendar minha reunião <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
@@ -1082,13 +1090,17 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; min-width: 0; }
   /* ---------- UTMs ---------- */
   try {
     var qs = new URLSearchParams(window.location.search);
-    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (k) { var i = document.querySelector('input[name="' + k + '"]'); if (i && qs.get(k)) i.value = qs.get(k); });
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'ref'].forEach(function (k) { var i = document.querySelector('input[name="' + k + '"]'); if (i && qs.get(k)) i.value = qs.get(k); });
   } catch (e) {}
 
   /* ---------- formulário ---------- */
   var form = document.getElementById('leadForm');
   if (form) {
     var msgs = { nome: 'Digite seu nome.', whatsapp: 'Digite um WhatsApp com DDD, como (48) 99999-9999.', email: 'Digite um e-mail válido, como voce@empresa.com.', cidade: 'Digite a cidade e o estado onde quer atuar.', capital: 'Escolha uma faixa de capital.', perfil: 'Escolha o seu perfil.', prazo: 'Escolha quando pretende começar.' };
+    var indBox = document.getElementById('f-indicador-box'), indInput = document.getElementById('f-indicador');
+    function toggleInd() { var sim = !!form.querySelector('[name="indicado"][value="Sim"]:checked'); indBox.hidden = !sim; if (!sim) { indInput.value = ''; indBox.classList.remove('invalid'); indBox.querySelector('.err').textContent = ''; } }
+    form.querySelectorAll('[name="indicado"]').forEach(function (r) { r.addEventListener('change', toggleInd); });
+    if (form.querySelector('[name="ref"]').value) { form.querySelector('[name="indicado"][value="Sim"]').checked = true; toggleInd(); }
     var wa = form.querySelector('[name="whatsapp"]');
     wa.addEventListener('input', function () {
       var d = wa.value.replace(/\D/g, '').slice(0, 11);
@@ -1106,6 +1118,11 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; min-width: 0; }
         var box = form.querySelector('[data-group="' + n + '"]'), err = box.querySelector('.err'), ok = !!form.querySelector('[name="' + n + '"]:checked');
         err.textContent = ok ? '' : msgs[n]; if (!ok && !first) first = box.querySelector('input');
       });
+      if (!indBox.hidden) {
+        var okInd = indInput.value.trim().length > 1 || !!form.querySelector('[name="ref"]').value;
+        indBox.classList.toggle('invalid', !okInd); indBox.querySelector('.err').textContent = okInd ? '' : 'Digite o nome de quem te indicou.'; indInput.setAttribute('aria-invalid', okInd ? 'false' : 'true');
+        if (!okInd && !first) first = indInput;
+      }
       return first;
     }
     form.addEventListener('submit', function (e) {
@@ -1113,14 +1130,14 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; min-width: 0; }
       var bad = check(); if (bad) { bad.focus(); return; }
       var btn = document.getElementById('f-submit'); btn.disabled = true; btn.textContent = 'Enviando…';
       var data = Object.fromEntries(new FormData(form).entries());
-      var msg = 'Olá! Vim pela página da franquia Cymaco e quero saber se minha cidade está disponível. Sou ' + data.nome + ', de ' + data.cidade + '.';
+      var msg = 'Olá! Vim pela página da franquia Cymaco e quero saber se minha cidade está disponível. Sou ' + data.nome + ', de ' + data.cidade + '.' + (data.indicado_por ? ' Fui indicado(a) por ' + data.indicado_por + '.' : (data.indicado === 'Sim' ? ' Fui indicado(a) por um franqueado.' : '')) + (data.ref ? ' Código de indicação: ' + data.ref + '.' : '');
       document.getElementById('waLink').href = 'https://wa.me/5548996822500?text=' + encodeURIComponent(msg);
       var endpoint = form.dataset.endpoint;
       var send = endpoint ? fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) }) : Promise.resolve();
       send.catch(function () {}).then(function () {
         form.hidden = true; var s = document.getElementById('formSuccess'); s.hidden = false; s.focus();
         if (window.fbq) { try { window.fbq('track', 'Lead'); } catch (err) {} }
-        if (window.dataLayer) { window.dataLayer.push({ event: 'lead_franquia', capital: data.capital, perfil: data.perfil, prazo: data.prazo }); }
+        if (window.dataLayer) { window.dataLayer.push({ event: 'lead_franquia', capital: data.capital, perfil: data.perfil, prazo: data.prazo, indicado: data.indicado || 'Não respondeu', ref: data.ref || '' }); }
       });
     });
   }
